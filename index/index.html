@@ -17,7 +17,7 @@
     <div class="">
     <div class="space-y-12 m-auto">
         <div
-        class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-4 w-1/2 m-auto"
+        class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-4 md:w-1/2 m-auto"
         >
         <div class="sm:col-span-4">
             <label for="Name" class="block text-sm/6 font-medium font-mono text-gray-300"
@@ -63,23 +63,23 @@
             />
             </div>
         </div>
-        <select name="" id="statuss" class="rounded-md ">
-          <option value="Encours" id="encours" class="font-mono">En cours</option>
-          <option value="Terminé" id="termine" class="font-mono">Terminé</option>
+        <select name="" id="statuss" class="rounded-md px-4 block w-full rounded-md border-0 py-1.5 dark:bg-slate-400  shadow-sm ring-1 ring-inset placeholder:text-gray-600 focus:ring-2 focus:ring-inset  sm:text-sm/6 ">
+          <option value="Encours" id="encours" class="font-mono text-orange-700">En cours</option>
+          <option value="Terminé" id="termine" class="font-mono text-lime-600*">Terminé</option>
         </select>
         <div
             class="mt-6 flex items-center justify-end gap-x-6 sm:col-span-4 content-center">
-            <button onclick="ajouter()" type="button" id="button" class="rounded-md font-mono bg-lime-600 px-3 py-2 text-sm  text-white shadow-sm hover:bg-black ">
+            <button onclick="ajouter()" type="button" id="button" class="rounded-md font-mono bg-lime-600 px-3 py-2 text-sm font-bold hover:scale-125 text-white shadow-sm hover:bg-slate-800 ">
               Submit
             </button>
-            <button  type="reset" class="rounded-md bg-white px-3 py-2 text-sm font-mono text-lime-600 shadow-sm hover:bg-black ">
+            <button  type="reset" class="rounded-md bg-white px-3 py-2 text-sm font-mono text-lime-600 shadow-sm font-bold hover:scale-125 hover:bg-slate-800 ">
               Cancel
             </button>
         </div>
         </div>
     </div>
     </div>
-<div class="w-1/2 m-auto pt-10 relative overflow-x-auto shadow-md sm:rounded-lg">
+<div class="md:w-full md:grid md:justify-center pt-10 relative overflow-x-auto shadow-md sm:rounded-lg">
   <table id="table" class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
       <thead class="w-full text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
           <tr>

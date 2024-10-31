@@ -38,18 +38,18 @@ function ajouter(){
 function addrow(){
     tbody.innerHTML="" ;
     for( i=0;i<datatask.length;i++){
-        let bgColor = ""; 
+        let txtColor = ""; 
 
         if (datatask[i].statuss === "Encours") {
-            bgColor = "bg-orange-700"; 
+            txtColor = "text-orange-700"; 
         } else{
-            bgColor = "bg-lime-600"; 
+            txtColor = "text-lime-600"; 
         } 
         tbody.innerHTML += `<tr class="">
         <td data="" class="px-6 py-4 font-medium font-mono text-gray-900 whitespace-nowrap dark:text-white">${datatask[i].namee}</td>
         <td class="pr-[9.25rem] pl-3 py-4 font-medium font-mono text-gray-900 whitespace-nowrap dark:text-white">${datatask[i].description}</td>
         <td class="px-6 py-4 font-medium font-mono text-gray-900 whitespace-nowrap dark:text-white">${datatask[i].date}</td>
-        <td class="${bgColor} px-6 py-4 font-medium font-mono text-gray-900 whitespace-nowrap dark:text-white">${datatask[i].statuss}</td>
+        <td class="${txtColor} px-6 py-4 font-medium font-mono  whitespace-nowrap ">${datatask[i].statuss}</td>
         <td ><a href="#" onclick="edit(${i})" class="font-medium font-mono text-blue-600 dark:text-blue-500 hover:underline">Edit</a></td>
         <td><a onclick="deleteall(${i})" href="#" class="font-medium font-mono text-blue-600 dark:text-blue-500 hover:underline">Delete</a></td>
         </tr>`
