@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task scheduler</title>
     <link rel="stylesheet" href="output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-gray-950">
     <nav class="bg-gray-950">
@@ -12,6 +13,9 @@
         <div class="relative flex justify-center items-center h-16">
         <span class="text-lime-600 font-mono text-xl">Task Scheduler</span>
         </div>
+    </div>
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <span class="text-white text-center font-mono text-xl" id="editTitle"></span>
     </div>
     </nav>
     <div class="">
@@ -72,42 +76,42 @@
             <button onclick="ajouter()" type="button" id="button" class="rounded-md font-mono bg-lime-600 px-3 py-2 text-sm font-bold hover:scale-125 transition-[2s] text-white shadow-sm hover:bg-slate-800 ">
               Submit
             </button>
-            <button  type="reset" class="rounded-md bg-white px-3 py-2 text-sm font-mono text-lime-600 shadow-sm font-bold hover:scale-125 transition-[2s] hover:bg-slate-800 ">
+            <button onclick="cancel()" type="button" class="rounded-md bg-white px-3 py-2 text-sm font-mono text-lime-600 shadow-sm font-bold hover:scale-125 transition-[2s] hover:bg-slate-800 ">
               Cancel
             </button>
         </div>
         </div>
     </div>
     </div>
-<div class="md:w-full md:grid md:justify-center pt-10 relative overflow-x-auto shadow-md sm:rounded-lg">
-  <table id="table" class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-      <thead class="w-full text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-          <tr>
-              <th scope="col" class="font-mono px-10 py-3">
-                  Name
-              </th>
-              <th scope="col" class="font-mono px-10 py-3">
-                  Description
-              </th>
-              <th scope="col" class="font-mono px-10 py-3">
-                  Date
-              </th>
-              <th scope="col" class="font-mono px-6 py-3">
-                  Status
-              </th>
-              <th scope="col" class="font-mono px-6 py-3">
-                  <span class="sr-only">Edit</span>
-              </th>
-              <th scope="col" class="font-mono px-6 py-3">
-                <span class="sr-only">Delete</span>
-            </th>
-          </tr>
-      </thead>
-      <tbody id="tbody" class="">
+    <div class="md:w-full md:grid md:justify-center pt-10 relative overflow-x-auto shadow-md sm:rounded-lg">
+    <table id="table" class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead class="w-full text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="font-mono px-10 py-3">
+                    Name
+                </th>
+                <th scope="col" class="font-mono px-10 py-3">
+                    Description
+                </th>
+                <th scope="col" class="font-mono px-10 py-3">
+                    Date
+                </th>
+                <th scope="col" class="font-mono px-6 py-3">
+                    Status
+                </th>
+                <th scope="col" class="font-mono px-6 py-3">
+                    <span class="sr-only">Edit</span>
+                </th>
+                <th scope="col" class="font-mono px-6 py-3">
+                    <span class="sr-only">Delete</span>
+                </th>
+            </tr>
+        </thead>
+        <tbody id="tbody" class="">
 
-      </tbody>
-  </table>
-</div>
+        </tbody>
+    </table>
+    </div>
 <script src="./script.js"></script>
 </body>
 </html>
